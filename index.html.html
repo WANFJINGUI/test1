@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="./source/swiper.css">
+	<link rel="stylesheet" type="text/css" href="./source/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="./source/style.css">
+</head>
+<body>
+	<div class="music-icon"><span class="paused">&times;</span></div>
+	<audio loop src="./music/gaobaiqiqiu.mp3" id="mymusic" autoplay></audio>
+	<div class="snow-bg bg">
+    	<canvas id="snow-canvas"></canvas>
+    </div>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide">
+		        <div class="fox-bg bg ani"  swiper-animate-effect="fadeInDown" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+		        	<div class="fox"></div>
+		        </div>
+		        <div class="bottom box ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="2s" swiper-animate-delay="1s">
+		        	这里可以是第一页开头要说的话<br/>
+		        	爱填啥填啥<br/>
+		        	这个尖括号包括的br是换行符
+		        </div>
+	        </div>
+	        <div class="swiper-slide">
+		        
+		        <div class="top box ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+					<img src="./img/2.jpg" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="1s">
+		        </div>
+	        	
+        		<div class="bottom box ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		        	可以是文字或者图片
+		        </div>
+		        
+	        </div>
+	        <div class="swiper-slide">
+	        	<div class="bg">
+	        		<canvas id="text-canvas"></canvas>
+	        	</div>
+	        	<div class="top box text-canvas ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">
+					<img src="./img/2.jpg">
+					<div>
+						这个喷字的一页可以在这里另外显示文字或图片
+					</div>
+		        </div>
+	        </div>
+	        <div class="swiper-slide">
+	        	<div class="top box ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+					<img src="./img/2.jpg">
+		        </div>
+	        	
+        		<div class="bottom box ani" swiper-animate-effect="shake" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		        	可以是文字或者图片
+		        </div>
+	        </div>
+	        <div class="swiper-slide" data-swiper-autoplay="10000">
+	        	<div class="fire"></div>
+	        	<div class="top box ani" swiper-animate-effect="wobble" swiper-animate-duration="1s" swiper-animate-delay="1s">
+					这里你也可以写几个字
+		        </div>
+	        </div>
+	        <div class="swiper-slide">
+	        	<div class="top box ani" swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+					<img src="./img/2.jpg">
+		        </div>
+	        	
+        		<div class="bottom box ani"  swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		        	可以是文字或者图片
+		        </div>
+	        </div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <!-- <div class="swiper-button-prev"></div>
+	    <div class= -->"swiper-button-next"></div>
+	    
+	    <!-- 如果需要滚动条 -->
+	    <div class="swiper-scrollbar"></div>
+	</div>
+</body>
+<script>        
+//圆点的字，最好几页就写几个字，如果页数多了随便写个符号占着位子可以让字显示在中间
+  var btnText='祝你生日快乐';
+  // 这是喷字的文字，喷你这里写的几个字,如某某我爱你
+  var text1='我爱你';
+  window.onload=function(){
+  	 var music=document.getElementById('mymusic');
+  	 document.onclick=function(){
+  	 	 music.play();
+  	 }
+  }
+ 
+</script>
+<script type="text/javascript" src="./source/jquery.min.js"></script>
+<script type="text/javascript" src="./source/swiper.js"></script>
+<script type="text/javascript" src="./source/swiper.animate.min.js"></script>
+<script type="text/javascript" src="./source/jquery.fireworks.js"></script>
+<script type="text/javascript" src="./source/snow.js"></script>
+<script type="text/javascript" src="./source/gushText.js"></script>
+<script type="text/javascript" src="./source/index.js"></script>
+</body>
+</html>

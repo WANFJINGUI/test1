@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+}
+.music-icon{
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	background: url('./m.jpg') no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+	border-radius: 50% 50%;
+	font-size: 25px;
+	text-align: center;
+	line-height: 40px;
+	animation: 3s linear rotatefresh infinite;
+}
+.paused{
+	display: none;
+}
+@keyframes rotatefresh {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+.swiper-pagination-bullet{
+	width: 25px;
+	height: 25px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #ffffff;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: 30px;
+}
+.swiper-slide{
+	padding: 20px 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+.bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.fox-bg{
+	height: 50%;
+}
+.fox{
+	width:156px;
+	height:156px;
+	margin:0 auto;
+	background:url(./foxtail.png) no-repeat 0 0;
+	animation:animate-tail 3.75s steps(44) infinite;
+}
+@keyframes animate-tail{
+	0%{background-position:-6864px 0;}
+	100%{background-position:0 0;}
+}
+.snow-bg{
+	background:radial-gradient(#a8e063, #56ab2f);
+}
+.bg canvas{
+	width: 100%;
+	height: 100%;
+}
+.box{
+	height: 50%;
+	width: 100%;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	font-size: 20px;
+	text-align: center;
+	word-break:break-all;
+}
+.box img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.top{
+	top: 0;
+}
+.bottom{
+	top: 50%;
+}
+.fire{
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.text-canvas{
+	color: #ffffff;
+}
+.text-canvas img{
+	max-height: 60%;
+}
+.fire+div{
+	color: rgba(255,255,255,0.5);
+}
